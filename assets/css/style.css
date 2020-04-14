@@ -1,0 +1,762 @@
+body {
+    background-image: url(../images/webb.png);
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+    line-height: 150%;
+}
+
+h2,
+h3 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #4aaaa5;
+}
+
+main {
+    margin: 0 auto;
+    width: 960px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+section {
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: #cccccc;
+    padding: 0 5% 0 5%;
+    background-color: #ffffff;
+    width: 650px;
+    margin-right: 40px;
+    float: left;
+}
+
+aside {
+    text-align: center;
+    padding: 0 5% 0 5%;
+    background-color: #ffffff;
+    width: 270px;
+    height: 150px;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: #cccccc;
+}
+
+#pic {
+    width: 200px;
+    transform: scale(1);
+}
+
+header {
+    position: static;
+    margin-bottom: 3%;
+    background-color: #ffffff;
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    border-color: #cccccc;
+}
+
+.hdr {
+    margin: 0 auto;
+    width: 960px;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    padding: 0 5% 0 5%;
+    line-height: 250%;
+    margin: 0;
+    color: white;
+    background-color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+nav {
+    margin-left: 0;
+    padding-top: 2%;
+}
+
+a {
+    color: #777777;
+    text-decoration: none;
+}
+
+#port {
+    border-style: solid;
+    border-width: 0 0.5px 0 .5px;
+    border-color: #cccccc;
+    padding: 0 10px 0 10px;
+}
+
+a:first-child,
+a:last-child {
+    padding: 0 10px 0 10px;
+}
+
+a:hover {
+    font-size: large;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+#pic {
+    float: left;
+    margin-right: 4%;
+}
+
+#hr2 {
+    border-top: 0.5px solid #cccccc;
+}
+
+#hr1 {
+    border-top: 1px solid #cccccc;
+}
+
+
+
+.ftr {
+    flex: 1 1 auto;
+    border-top: 5px solid #4aaaa5;
+    width: 100%;
+    color: #cccccc;
+    position: fixed;
+    line-height: 150%;
+    text-align: center;
+    padding: 0;
+    background-color: #666666;
+    bottom: 0;
+    position: static;
+    margin-top: 2em;
+}
+
+#plchld1,
+#plchld2,
+#plchld3,
+#plchld4,
+#plchld5 {
+    width: 245px;
+    transform: scale(1);
+}
+
+.fgr {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+figcaption {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    line-height: 250%;
+    text-align: center;
+    position: relative;
+    bottom: 25%;
+}
+
+
+.frm {
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+form {
+    z-index: 1;
+    width: 100%;
+}
+
+label {
+    margin-top: 23%;
+}
+
+input {
+    line-height: 170%;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+input[placeholder],
+textarea[placeholder] {
+    color: aliceblue;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+button {
+    border: none;
+    color: #ffffff;
+    background-color: #4aaaa5;
+    line-height: 200%;
+    padding: 0 3% 0 3%;
+    margin: 3% 0 5% 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+    margin: 2% 0 2% 0;
+}
+
+#message {
+    width: 100%;
+    height: 150px;
+}
+
+textarea {
+    line-height: 150%;
+}
+@media only screen and (max-width: 640) {
+    body {
+        padding: 0;
+        margin: 0 auto;
+        overflow: auto;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
+
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hdr {
+
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .iniA {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        line-height: 200%;
+        font-size: small;
+        width: 100%;
+
+    }
+
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        text-align: center;
+        width: 100%;
+        font-size: large;
+        margin: 0;
+        padding: 0;
+    }
+
+    h2 {
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        font-size: large;
+        margin-bottom: 2vh;
+        margin-top: 2vh;
+    }
+
+    #port {
+        border: none;
+    }
+
+    #hr1,
+    #hr2 {
+        width: 90%;
+        margin: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    .ftr {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+        font-size: small;
+        margin: 0;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 8em;
+        padding: 0;
+        margin: 3vh 0;
+    }
+
+    #pic {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        width: 90%;
+        margin: 0;
+        margin-bottom: 2vh;
+        margin-top: 3vh;
+    }
+
+    p {
+        font-size: small;
+        width: 90%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .imgP {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fgr {
+
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+
+    }
+
+    figure {
+        margin: 0;
+        padding: 0;
+    }
+
+    #plchld1,
+    #plchld2,
+    #plchld3,
+    #plchld4,
+    #plchld5 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: .5vh 0;
+        padding: 0;
+    }
+
+    .frm {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        width: 90%;
+        align-items: center;
+    }
+
+    figcaption {
+        position: relative;
+        bottom: 5vh;
+    }
+
+    form {
+        padding: 0;
+        margin: 0;
+    }
+
+    .contc {
+        padding: 0;
+        margin: 0;
+        width: 90%;
+    }
+
+    input {
+        width: 100%
+    }
+
+    label {}
+}
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 0;
+        margin: 0 auto;
+        overflow: auto;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
+
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hdr {
+
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .iniA {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        line-height: 200%;
+        font-size: small;
+        width: 100%;
+
+    }
+
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        text-align: center;
+        width: 100%;
+        font-size: large;
+        margin: 0;
+        padding: 0;
+    }
+
+    h2 {
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        font-size: large;
+        margin-bottom: 2vh;
+        margin-top: 2vh;
+    }
+
+    #port {
+        border: none;
+    }
+
+    #hr1,
+    #hr2 {
+        width: 90%;
+        margin: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    .ftr {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+        font-size: small;
+        margin: 0;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 8em;
+        padding: 0;
+        margin: 3vh 0;
+    }
+
+    #pic {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        width: 90%;
+        margin: 0;
+        margin-bottom: 2vh;
+        margin-top: 3vh;
+    }
+
+    p {
+        font-size: small;
+        width: 90%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .imgP {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fgr {
+
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+
+    }
+
+    figure {
+        margin: 0;
+        padding: 0;
+    }
+
+    #plchld1,
+    #plchld2,
+    #plchld3,
+    #plchld4,
+    #plchld5 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: .5vh 0;
+        padding: 0;
+    }
+
+    .frm {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        width: 90%;
+        align-items: center;
+    }
+
+    figcaption {
+        position: relative;
+        bottom: 5vh;
+    }
+
+    form {
+        padding: 0;
+        margin: 0;
+    }
+
+    .contc {
+        padding: 0;
+        margin: 0;
+        width: 90%;
+    }
+
+    input {
+        width: 100%
+    }
+
+}
+@media (min-width: 641px) and (max-width: 768px) {
+
+    body {
+        padding: 0;
+        margin: 0 auto;
+        overflow: auto;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
+
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hdr {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        line-height: 200%;
+        font-size: small;
+        width: 100%;
+
+    }
+
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        text-align: center;
+        width: 30%;
+        font-size: large;
+        margin: 0;
+        padding: 0;
+    }
+
+    h2 {
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        font-size: large;
+        margin-bottom: 5vh;
+        margin-top: 2vh;
+    }
+
+    #port {
+        border: none;
+    }
+
+    #hr1,
+    #hr2 {
+        width: 90%;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 5vh;
+    }
+
+    .ftr {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+        font-size: small;
+        margin: 0;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 8em;
+        padding: 0;
+        margin: 3vh 0;
+    }
+
+    #pic {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        padding: 0;
+        width: 45%;
+        margin: 0;
+        margin-bottom: 2vh;
+        margin-top: 3vh;
+    }
+
+    p {
+        font-size: medium;
+        width: 90%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .imgP {
+        display: flex;
+        align-items: flex-start;
+        padding: 0 5%;
+    }
+
+    .fgr {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 90%;
+
+    }
+
+    figure {
+        margin: 0;
+        padding: 0;
+        width: 49%;
+    }
+
+    #plchld1,
+    #plchld2,
+    #plchld3,
+    #plchld4,
+    #plchld5 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 1.5vh 0;
+        padding: 0;
+    }
+
+    .frm {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        width: 90%;
+        align-items: center;
+    }
+
+    figcaption {
+        position: relative;
+        bottom: 25vh;
+        width: 100%;
+    }
+
+    form {
+        padding: 0;
+        margin: 0;
+    }
+
+    .contc {
+        padding: 0;
+        margin: 0;
+        width: 90%;
+    }
+
+    input {
+        width: 100%
+    }
+}
+
